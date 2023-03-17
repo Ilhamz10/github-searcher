@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+hr{
+    width: 95%;
+    border: 1px solid lightgray;
+    margin: auto;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    padding: 40px 0;
+    align-items: flex-start;
+    justify-content: center;
+    background: #E8E8E8;
+}
+
+.wrapper{
+    width: 60%;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.search-box{
+    width: 85%;
+    background: #F1F3F4;
+    color: #B1B8C0;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+}
+
+form{
+    display: flex;
+}
+
+.search-box input{
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    color: gray;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+}
+
+.search-box input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 40px #F1F3F4 inset !important;
+    -webkit-text-fill-color: gray !important;
+}
+
+
+.search-btn{
+    background: none;
+    color: gray;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 8%;
+}
+
+.result{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.error-message{
+    font-size: 1.2rem;
+    text-align: center;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.repository{
+    display: flex;
+    gap: 20px;
+}
+
+.repos-avatar{
+    width: 100%;
+}
+
+.info a{
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+}
+
+.info p{
+    font-size: 1.2rem;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .info a{
+        font-size: 0.6rem !important;
+    }
+    .info p{
+        font-size: 0.6rem !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .info a{
+        font-size: 0.8rem;
+    }
+    .info p{
+        font-size: 0.8rem;
+    }
+}
